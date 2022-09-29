@@ -5,7 +5,7 @@ export const NavBar = () => {
     return(
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">Navbar</a>
+    <a className="navbar-brand" href="#">Makers</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon" />
     </button>
@@ -34,6 +34,11 @@ export const NavBar = () => {
             <div className="dropdown-divider" />
             <a className="dropdown-item" href="#">Separated link</a>
           </div>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">
+            <CarWidget />
+          </a>
         </li>
       </ul>
       <form className="d-flex">
