@@ -17,13 +17,13 @@ export const NavBar = () => {
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Features</a>
+          <a className="nav-link" href="#">Productos</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Pricing</a>
+          <a className="nav-link" href="#">Contacto</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">About</a>
+          <a className="nav-link" href="#">Sobre Nosotros</a>
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
