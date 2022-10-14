@@ -1,42 +1,43 @@
 import React from "react";
 import CarWidget from "../CarWidget";
+import { NavLink } from "react-router-dom";
 
 export const NavBar = () => {
     return(
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">Makers</a>
+    <NavLink className="navbar-brand" to='/'>Makers</NavLink>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon" />
     </button>
     <div className="collapse navbar-collapse" id="navbarColor01">
       <ul className="navbar-nav me-auto">
         <li className="nav-item">
-          <a className="nav-link active" href="#">Home
+          <NavLink className="nav-link active" to='/'>Home
             <span className="visually-hidden">(current)</span>
-          </a>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Productos</a>
+          <NavLink className="nav-link" to='/'>Productos</NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Contacto</a>
+          <NavLink className="nav-link" to='/categoria'>Categoria</NavLink>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Sobre Nosotros</a>
+          <NavLink className="nav-link" to='/'>Contacto</NavLink>
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
           <div className="dropdown-menu">
-            <a className="dropdown-item" href="#">Action</a>
-            <a className="dropdown-item" href="#">Another action</a>
-            <a className="dropdown-item" href="#">Something else here</a>
+            <NavLink className="dropdown-item" href="#">Action</NavLink>
+            <NavLink className="dropdown-item" href="#">Another action</NavLink>
+            <NavLink className="dropdown-item" href="#">Something else here</NavLink>
             <div className="dropdown-divider" />
-            <a className="dropdown-item" href="#">Separated link</a>
+            <NavLink className="dropdown-item" href="#">Separated link</NavLink>
           </div>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">
+          <a className="nav-link" to='/cart'>
             <CarWidget />
           </a>
         </li>
