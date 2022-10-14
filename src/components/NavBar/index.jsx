@@ -21,17 +21,17 @@ export const NavBar = () => {
           <NavLink className="nav-link" to='/'>Productos</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to='/categoria'>Categoria</NavLink>
+          <NavLink className="nav-link" to='/categoria/muebleTV'>muebleTV</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link" to='/'>Contacto</NavLink>
+          <NavLink className="nav-link" to='/categoria/mesaLuz'>mesaLuz</NavLink>
         </li>
         <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+          <NavLink className="nav-link dropdown-toggle" data-bs-toggle="dropdown" to='/categoria' role="button" aria-haspopup="true" aria-expanded="false">Categorias</NavLink>
           <div className="dropdown-menu">
-            <NavLink className="dropdown-item" href="#">Action</NavLink>
-            <NavLink className="dropdown-item" href="#">Another action</NavLink>
-            <NavLink className="dropdown-item" href="#">Something else here</NavLink>
+            <NavLink className="dropdown-item" to='/categoria'>muebleTV</NavLink>
+            <NavLink className="dropdown-item" to='/categoria'>mesaLuz</NavLink>
+            <NavLink className="dropdown-item" to='/categoria'>otros</NavLink>
             <div className="dropdown-divider" />
             <NavLink className="dropdown-item" href="#">Separated link</NavLink>
           </div>
