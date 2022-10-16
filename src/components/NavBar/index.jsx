@@ -1,10 +1,14 @@
 import React from "react";
 import CarWidget from "../CarWidget";
+import Form from "../Form";
+import Dropdown from "../Dropdown";
 import { NavLink } from "react-router-dom";
 
-export const NavBar = () => {
+const NavBar = () => {
+  const listDropdown = ["Muebles Tv", "Mesa de Luz", "Escritorios"]
     return(
-        <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+
+  <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
   <div className="container-fluid">
     <NavLink className="navbar-brand" to='/'>Makers</NavLink>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,26 +30,14 @@ export const NavBar = () => {
         <li className="nav-item">
           <NavLink className="nav-link" to='/categoria/mesaLuz'>mesaLuz</NavLink>
         </li>
-        <li className="nav-item dropdown">
-          <NavLink className="nav-link dropdown-toggle" data-bs-toggle="dropdown" to='/categoria' role="button" aria-haspopup="true" aria-expanded="false">Categorias</NavLink>
-          <div className="dropdown-menu">
-            <NavLink className="dropdown-item" to='/categoria'>muebleTV</NavLink>
-            <NavLink className="dropdown-item" to='/categoria'>mesaLuz</NavLink>
-            <NavLink className="dropdown-item" to='/categoria'>otros</NavLink>
-            <div className="dropdown-divider" />
-            <NavLink className="dropdown-item" href="#">Separated link</NavLink>
-          </div>
-        </li>
+        <Dropdown lista = {listDropdown}/>
         <li className="nav-item">
           <NavLink className="nav-link" to='/cart'>
             <CarWidget />
           </NavLink>
         </li>
       </ul>
-      <form className="d-flex">
-        <input className="form-control me-sm-2" type="text" placeholder="Search" />
-        <button className="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-      </form>
+        <Form/>
     </div>
   </div>
 </nav>
