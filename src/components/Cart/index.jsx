@@ -20,7 +20,9 @@ const { cart, totalPrice } = useCartContext();
         <>
             {
                 cart.map((producto) => (<ItemCart key={producto.id} producto={producto} />))
+                
             }
+            <p>total: {totalPrice()}</p>
     </>
     );
 }
